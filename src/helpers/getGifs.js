@@ -9,6 +9,7 @@ const gifEmpety = () => {
 };
 
 export const getGifs = async (category) => {
+    
     const url = `https://api.giphy.com/v1/gifs/search?api_key=fpUozhgZO4O69AFi0Q7pgSBsOBeA7EJm&q=${category}&limit=10`;
     const resp = await fetch(url);
 
